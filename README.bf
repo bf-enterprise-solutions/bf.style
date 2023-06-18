@@ -412,4 +412,17 @@
    In all the other (rare) cases where these categories (executable,
    library, notebook) don't apply, all the conditions SHOULD be
    carefully considered, and one of these three categories MUST be
-   picked after all.]]]
+   picked after all.]]
+
+ [2 CODE STYLE FOR LANGUAGES OTHER THAN BRAINFUCK
+
+  Given that all the other languages used alongside Brainfuck are
+  inferior in regards to security and simplicity, their use MUST be
+  minimized at all costs.
+
+  In case of using any language other than Brainfuck, it SHOULD be
+  brought as close to Brainfuck as possible. Long variable names,
+  helper functions, and structural/functional/object-oriented
+  programming MUST be avoided to not interfere with the
+  straightforward structure of the Brainfuck code they try to
+  augment.]]
