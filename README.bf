@@ -91,8 +91,8 @@
     All the code inside the loop body MUST be indented one space more
     than the code outside the loop. Recursively, if there's a loop
     inside another loop, the outer loop MUST be indented one space
-    more than the outer code, and the inner loop MUST be indented two
-    spaces more than the outer code.
+    more than the code outside it, and the inner loop MUST be indented
+    two spaces more than the outer code.
 
     Both opening and closing brackets SHOULD be aligned with the code
     outside the loop. If there are commands before the opening
@@ -114,7 +114,11 @@
      >+[ loop with commands preceding it
       code inside the loop indented the same
       <<] closing bracket with commands preceding it (indented)
-     outer code again]]
+     outer code again]
+
+    Tabs are not permitted for indentation in Brainfuck code.
+
+    You can use the bundled format.bf script to format your programs.]
 
    [1.2.2 IF-LOOPS
 
