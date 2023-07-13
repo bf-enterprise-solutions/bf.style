@@ -36,10 +36,32 @@ read char and subtract exclamation mark (33)
    [>,-- ----- ----- ----- ----- ----- -----
     when non space restore and copy it and kill the flag
     [+++++ +++++ +++++ +++++ +++++ +++++ ++ [>+<-] <->]<]
-   > ++ +++++ +++++ +++++ +++++ +++++ +++++ space (for printing)
-   <<[>+>.<<-] to bracket count and print bracket count spaces
-   >[<+>-] restore bracket count
-   >[-]< delete space and back to flag
+   SPECIAL CASE: closing bracket starting the line
+   + set flag
+   subtract closing bracket
+   >>--- ----- ----- ----- ----- ----- -----
+   ----- ----- ----- ----- ----- -----
+   ----- ----- ----- ----- ----- -----
+   [ if not closing bracket
+    <<- kill the flag
+    > ++ +++++ +++++ +++++ +++++ +++++ +++++ space (for printing)
+    <<[>+>.<<-] to bracket count and print bracket count (minus one) spaces
+    >[<+>-] restore bracket count
+    >[-] remove space
+    >[<+>-] copy the non bracket for later move
+   ]
+   restore the closing bracket
+   +++++ +++++ +++++ +++++ +++++ +++++
+   +++++ +++++ +++++ +++++ +++++ +++++
+   +++++ +++++ +++++ +++++ +++++ +++++ +++
+   <[>+<-] if it was copied above then move it back
+   <[ if closing bracket case
+    - kill the flag
+    > ++ +++++ +++++ +++++ +++++ +++++ +++++ space (for printing)
+    <<-[>+>.<<-] to bracket count and print bracket count minus one spaces
+    >+[<+>-] restore bracket count
+    >[-]< delete space and back to flag
+   ]
   ]>
  ]
  <+ set the 'needs reading' flag
