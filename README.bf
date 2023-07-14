@@ -273,8 +273,11 @@
 
   [1.5 PROGRAMS/LIBRARIES
 
-   Now, most of Brainfuck programs are written with a certain goal in
-   mind:
+   Brainfuck programs belong to files with .bf extension. Every file
+   is a self-contained program (because Brainfuck has not and need not
+   file inclusion mechanism or multi-file packages).
+
+   Most of Brainfuck programs are written with a certain goal in mind:
    - To make a working Brainfuck-based end user application.
    - To create a drop-in embeddable library.
    - To write a literate programming research notebook.
