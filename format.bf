@@ -11,6 +11,7 @@
  [^bracket count] [case flag] [char] [char copy]
 
  Code starts here:]
+
 read char and subtract exclamation mark (33)
 >>,----- ----- ----- ----- ----- ----- ---
 [ restore the initial char and print it
