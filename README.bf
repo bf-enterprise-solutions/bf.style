@@ -217,7 +217,7 @@
     referring to a construct on some other language/library familiar
     to the programmer and their colleagues.]
 
-   [1.3.1 INNER STRUCTURE OF CONTROL STRUCTURES
+   [1.3.2 INNER STRUCTURE OF CONTROL STRUCTURES
 
     Control structures are rarely well off with just a header
     comment. In most languages, control structures have a certain
