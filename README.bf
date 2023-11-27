@@ -391,6 +391,10 @@
     enough to occupy less than a screenful of lines (less than 25
     lines) in the code that uses them.
 
+    minify.bf bundled with bf.style is a canonical minification
+    implementation, and any result of other minification approach
+    SHOULD match the output of minify.bf.
+
     Good example of embeddable library compliant with bf.style is
     str.bf (https://github.com/bf-enterprise-solutions/str.bf).]
 
