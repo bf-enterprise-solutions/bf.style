@@ -37,32 +37,50 @@ read char and subtract exclamation mark (33)
    [>,-- ----- ----- ----- ----- ----- -----
     when non space restore and copy it and kill the flag
     [+++++ +++++ +++++ +++++ +++++ +++++ ++ [>+<-] <->]<]
-   SPECIAL CASE: closing bracket starting the line
+   SPECIAL CASES: closing bracket starting the line or blank line
    + set flag
-   subtract closing bracket
-   >>--- ----- ----- ----- ----- ----- -----
-   ----- ----- ----- ----- ----- -----
-   ----- ----- ----- ----- ----- -----
-   [ if not closing bracket
-    <<- kill the flag
-    > ++ +++++ +++++ +++++ +++++ +++++ +++++ space (for printing)
-    <<[>+>.<<-] to bracket count and print bracket count (minus one) spaces
-    >[<+>-] restore bracket count
-    >[-] remove space
-    >[<+>-] copy the non bracket for later move
-   ]
+   >> to char copy
+   [ newline (10)
+    ----- -----
+    [ closing bracket (93)
+     ----- ----- ----- ----- -----
+     ----- ----- ----- ----- -----
+     ----- ----- ----- ----- ----- ----- ---
+     [ default case
+      <<- kill the flag
+      > ++ +++++ +++++ +++++ +++++ +++++ +++++ space (for printing)
+      <<[>+>.<<-] to bracket count and print bracket count spaces
+      >[<+>-] restore bracket count
+      >[-] remove space
+      >[<+>-] copy the non bracket for later move
+     ]
+     <<
+     [ case closing bracket
+      - kill the flag
+      > ++ +++++ +++++ +++++ +++++ +++++ +++++ space (for printing)
+      <<-[>+>.<<-] to bracket count and print bracket count minus one spaces
+      >+[<+>-] restore bracket count
+      >[-]< delete space and back to flag
+     ]
+     >>]
+    <<
+    [case newline (blank line)
+     - kill the flag
+     do not print anything here
+     subtract to closing bracket
+     >>--- ----- ----- ----- -----
+     ----- ----- ----- ----- ----- -----
+     ----- ----- ----- ----- ----- -----
+     [<+>-] copy for later move
+     << back to flag
+    ]
+    >>]
    restore the closing bracket
+   < +++ +++++ +++++ +++++ +++++ +++++
    +++++ +++++ +++++ +++++ +++++ +++++
-   +++++ +++++ +++++ +++++ +++++ +++++
-   +++++ +++++ +++++ +++++ +++++ +++++ +++
-   <[>+<-] if it was copied above then move it back
-   <[ if closing bracket case
-    - kill the flag
-    > ++ +++++ +++++ +++++ +++++ +++++ +++++ space (for printing)
-    <<-[>+>.<<-] to bracket count and print bracket count minus one spaces
-    >+[<+>-] restore bracket count
-    >[-]< delete space and back to flag
-   ]
+   +++++ +++++ +++++ +++++ +++++ +++++ +++++
+   [>+<-] move it back to copy
+   < to case flag (0)
   ]>
  ]
  <+ set the 'needs reading' flag
