@@ -275,7 +275,8 @@
 
    It is RECOMMENDED to use the notation that Daniel B. Cristofani
    suggested, as is mostly compliant with bf.doc and represents the
-   purpose of the functions well enough.]
+   purpose of the functions well enough. In case the notation does not
+   align with bf.doc, bf.doc should be used as a definitive style.]
 
   [1.5 PROGRAMS/LIBRARIES
 
