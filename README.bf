@@ -35,8 +35,8 @@
 
   Linux kernel coding style
   (https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
-  UNIX philosophy, and common sense are taken as inspiration for the
-  commandments in this guide.
+  UNIX philosophy, and common sense are taken as an inspiration for
+  the commandments in this guide.
 
   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
   NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
