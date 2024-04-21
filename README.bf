@@ -118,6 +118,12 @@
 
     Tabs are not permitted for indentation in Brainfuck code.
 
+    Blank lines MAY be indented with the current spacing depth, or
+    they MAY stay all blank, up to the code writer. format.bf decides
+    to not indent the blank lines in an effort to stay compatible with
+    many Brainfuck linters highlighting the trailing whitespace as an
+    error.
+
     You can use the bundled format.bf script to format your programs.]
 
    [1.2.2 IF-LOOPS
