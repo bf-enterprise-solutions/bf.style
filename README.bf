@@ -351,7 +351,8 @@
      Some classes of batch processing programs are:
      - ASCII art programs.
      - Halting mathematical computations.
-     - One-shot programs requiring user input only once.
+     - One-shot programs requiring user input only once (like the
+     bundled format.bf and minify.bf).
 
      The discipline for those is simple:
      - Memory state MUST be preserved as it was before the computation.
@@ -400,7 +401,7 @@
 
     minify.bf bundled with bf.style is a canonical minification
     implementation, and any result of other minification approach
-    SHOULD match the output of minify.bf.
+    MUST match the output of minify.bf.
 
     Good example of embeddable library compliant with bf.style is
     str.bf (https://github.com/bf-enterprise-solutions/str.bf).]
