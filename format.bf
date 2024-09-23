@@ -12,10 +12,9 @@
 
  Code starts here:]
 
-read char and subtract exclamation mark (33)
->>,----- ----- ----- ----- ----- ----- ---
-[ restore the initial char and print it
- +++++ +++++ +++++ +++++ +++++ +++++ +++.
+read char unless null
+>>,
+[. print it
  <+> set case flag
  [ ----- ----- newline (10)
   [ opening bracket (91)
@@ -89,5 +88,4 @@ read char and subtract exclamation mark (33)
  >>[<<->>[<+>-]]
  <<[->,<] read new char if 'needs reading'
  subtract exclamation mark
- > --- ----- ----- ----- ----- ----- -----
-]
+ >] loop unless null
