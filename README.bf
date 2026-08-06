@@ -220,7 +220,7 @@
     MUST be named clearly, either as a block comment above the
     expression starting it, or as an opening bracket comment in case
     it's a loop-based structure. The name SHOULD be concise and
-    referring to a construct on some other language/library familiar
+    referring to a construct in some other language/library familiar
     to the programmer and their colleagues.]
 
    [1.3.2 INNER STRUCTURE OF CONTROL STRUCTURES
