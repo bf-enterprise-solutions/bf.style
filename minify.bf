@@ -1,6 +1,6 @@
 [SPDX-FileCopyrightText: Brainfuck Enterprise Solutions
  SPDX-License-Identifier: WTFPL]
-[format.bf---Brainfuck code minifier.
+[minify.bf---Brainfuck code minifier.
 
  Removes all the non-command character from the input. The input
  should be valid Brainfuck code with balanced square brackets,
