@@ -4,8 +4,9 @@
 
  Much like gofmt, formats the Brainfuck code it reads in the only
  formatting way possible: bf.style one. The input should be valid
- Brainfuck code with balanced square brackets, followed by the
- exclamation sign. The output is properly formatted code.
+ Brainfuck code with balanced square brackets, followed by the null
+ character (^D on UNIX™ systems.) The output is properly formatted
+ code.
 
  Memory layout is:
  [^bracket count] [case flag] [char] [char copy]
@@ -87,5 +88,4 @@ read char unless null
  and kill the 'needs reading' flag
  >>[<<->>[<+>-]]
  <<[->,<] read new char if 'needs reading'
- subtract exclamation mark
  >] loop unless null
